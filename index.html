@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--typed.js-->
+    <script src="lib/typed.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <!--Responsive meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- OPTIONAL: description -->
+    <meta name="description" content="Vy Doan">
+    <!-- OPTIONAL: author -->
+    <meta name="author" content="Vy Doan">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png" />
+    <title>Vy Doan</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Link the main.css stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--SIDE BAR-->
+<ul class="sidenav">
+    <li>
+        <h5><img src="image/vy.png" alt="Vy Doan" style="width:200px;" class="avatar"></h5>
+        <div id="typed-strings">
+            <h1>Hello! I'm Vy Doan</h1>
+        </div>
+        <span id="vy"></span>
+        <p>Born and raised in Vietnam. <br/>
+            College-educated in the United States. <br/>
+            A Tax Accountant learns to code.
+        </p>
+    </li>
+
+    <li>
+        <p><strong>Social Links</strong></p>
+        <a href="https://github.com/vydoan91"><i class="icon-github"></i></a>
+        <a href="https://www.linkedin.com/in/vyhdoan/"><i class="icon-linkedin"></i></a>
+        <a href="https://www.instagram.com/vy.doan91/"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com/vy.h.doan"><i class="icon-facebook"></i></a>
+    </li>
+
+</ul>
+
+<!--typing effect for sidebar-->
+<script>
+    var typed = new Typed('#vy', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 100,
+        backSpeed: 50
+    });
+</script>
+
+<!--MAIN-->
+
+<ul class="topnav">
+    <li><a class="active" href="index.html">About me</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experiences.html">Experience</a></li>
+</ul>
+
+<div class="main">
+    <section>
+        <h5><img src="image/skill.png" width="42" height="42"> SKILLS</h5>
+        <ul>
+            <li>Language: Java, JavaScript, HTML</li>
+            <li>Tools: Eclips, IntelliJ IDEA CE, WebStorm, Android Studio</li>
+            <li>Operating System: Mac OS, Windows, Linux</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section>
+        <h5><img src="image/school.png" width="42" height="42"> EDUCATION</h5>
+        <ul>
+            <li>Post-baccalaureate in Computer Science | California State East Bay | 2018 - Present</li>
+            <li>Bachelor of Business Administration (Accounting and Management Information System | Drexel Univerisity | 2013-2016</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section>
+        <h5><img src="image/calculator.png" width="42" height="42"> CERTIFIED PUBLIC ACCOUNTANT (CPA)</h5>
+        <ul>
+            <li>Passed all four sections of the Uniform CPA Examination | New York State | 2016</li>
+        </ul>
+        <hr>
+    </section>
+
+    <!--CONTACT FORM-->
+    <section>
+        <h5><img src="image/contact.png" width="42" height="42"> CONTACT ME</h5>
+        <div class="container-contact">
+            <form action="/action_page.php">
+                <div class="column-form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <input type="submit" value="Submit">
+                </div>
+
+                <div class="column-form">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
