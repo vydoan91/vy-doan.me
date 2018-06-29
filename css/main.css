@@ -1,0 +1,437 @@
+/*color used black: #343436; orange: #FF9F55*/
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+}
+
+/* Links */
+a {
+  color: #34495e;
+  word-wrap: break-word;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover, a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------
+  SIDEBAR
+---------------------------------------------------*/
+.sidenav {
+  list-style-type: none;
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343436;
+  overflow-x: hidden;
+  padding: 40px 20px;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+}
+
+.sidenav p{
+  color: lightgray;
+}
+
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.sidenav{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  div.main {
+    margin-left: 0;
+  }
+}
+
+/* Typing effect */
+.header {
+  background: #343436;
+  padding-top:50px;
+  text-align:center;
+  min-height: 500px;
+  width: 100%;
+}
+
+#vy {
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+/*---------------------------------------------------
+  MAIN
+---------------------------------------------------*/
+/*topnav*/
+
+ul.topnav {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 25%; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  border-bottom:solid black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+ul.topnav li a:hover:not(.active) {
+  text-decoration: underline;
+}
+
+ul.topnav li a.active {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 900px){
+  ul.topnav{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul.topnav li{
+    float: none;
+  }
+}
+
+/*Content*/
+.main {
+  margin-left: 25%; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 1px 80px;
+  height: auto;
+  list-style-type: none;
+}
+
+/*---------------------------------------------------
+  CONTACT FORM
+---------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #343436;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+input[type=submit]:hover {
+  background-color: #818181;
+}
+
+/* Style the container/contact section */
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to each other */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-form
+{
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+
+/*---------------------------------------------------
+  TIMELINE
+---------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin-left: 25%; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 1px 16px;
+  height: auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  border: 10px solid white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline {
+    margin-left: 0;
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 400px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 3px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+/*---------------------------------------------------
+  COLLAPSIBLE BUTTON
+---------------------------------------------------*/
+.collapsible {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-color: black;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content-hidden {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
