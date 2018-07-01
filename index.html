@@ -61,12 +61,29 @@
 
 <!--MAIN-->
 
-<ul class="topnav">
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a class="active" href="index.html">Home</a></li>
+<ul class="topnav" id="navbar">
+    <li><a href="#about">About me</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="mailto:vy.h.doan@gmail.com"><i class="icon-envelope"></i> </a> </li>
 </ul>
 
-<div class="main">
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<div class="main" id="about">
+    <h4>ABOUT ME</h4>
     <section>
         <h5>PROGRAMMING SKILLS</h5>
         <ul>
@@ -111,28 +128,60 @@
         <h5>DESIGNATION</h5>
         <p>Passed Uniform Certified Public Accountant Examination | New York State | 2016</p>
     </section>
+    <hr id="portfolio">
 
-    <!--CONTACT FORM-->
-    <section>
-        <div class="container-contact">
-            <h5 style="text-align: center">CONTACT ME</h5>
-            <form action="/action_page.php">
-                <div class="column-form">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <input type="submit" value="Submit">
-                </div>
+    <!-- Portfolio Gallery Grid -->
+    <h4>PORTFOLIO</h4>
 
-                <div class="column-form">
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
+    <div class="row">
+        <div class="column">
 
-            </form>
+            <div class="content">
+                <img src="image/miwok.png" alt="Mountains" style="width:100%">
+                <h3>Miwok App</h3>
+                <p>Udacity's android project using Android Studio</p>
+            </div>
         </div>
-    </section>
+
+        <div class="column">
+            <div class="content">
+                <img src="image/graph.png" alt="Lights" style="width:100%">
+                <h3>Line chart</h3>
+                <p>Java application fetching data from csv files to graph a line chart</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="image/personalweb.png" alt="Nature" style="width:100%">
+                <h3>Personal web</h3>
+                <p>Personal website utilizing HTML, CSS, Bootstrap and JavaScript</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+
+    <!--&lt;!&ndash;CONTACT FORM&ndash;&gt;-->
+    <!--<section>-->
+        <!--<div class="container-contact">-->
+            <!--<h5 style="text-align: center">CONTACT ME</h5>-->
+            <!--<form action="/action_page.php">-->
+                <!--<div class="column-form">-->
+                    <!--<label for="fname">First Name</label>-->
+                    <!--<input type="text" id="fname" name="firstname" placeholder="Your first name..">-->
+                    <!--<label for="lname">Last Name</label>-->
+                    <!--<input type="text" id="lname" name="lastname" placeholder="Your last name..">-->
+                    <!--<input type="submit" value="Submit">-->
+                <!--</div>-->
+
+                <!--<div class="column-form">-->
+                    <!--<label for="subject">Subject</label>-->
+                    <!--<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>-->
+                <!--</div>-->
+
+            <!--</form>-->
+        <!--</div>-->
+    <!--</section>-->
 
 </div>
 </body>
