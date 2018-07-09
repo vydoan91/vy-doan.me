@@ -268,7 +268,7 @@ ul.topnav li a.active {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 50%;
 }
 
 /* Clear floats after rows */
