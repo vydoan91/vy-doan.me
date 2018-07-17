@@ -52,9 +52,11 @@ a:before, a:after {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 4px double #ccc;
   margin: 1em 0;
-  padding: 0;
+   padding-bottom: 20px;
+  padding-top: 20px;
+   clear: both;
 }
 
 /*---------------------------------------------------
@@ -215,23 +217,40 @@ ul.topnav li a.active {
 /*Content*/
 .main {
   font-size: 16px; /* Increased text to enable scrolling */
-  padding: 20px 60px;
+  padding: 40px 60px;
   height: auto;
   list-style-type: none;
 }
 
 .main section{
+  padding-top: 40px;
   padding-bottom: 40px;
+  clear: both;
 }
 
 .main ul{
   list-style-type: none;
 }
 
-.main h4{
+.main h3{
   text-align: center;
 }
 
+.float-left {
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.float-right {
+  float: right;
+  text-align: right;
+  padding-left: 10px;
+}
+
+div.container {
+  word-wrap: break-word;
+}
 /*---------------------------------------------------
   COLLAPSIBLE BUTTON
 ---------------------------------------------------*/
@@ -273,7 +292,7 @@ ul.topnav li a.active {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 33.333%;
 }
 
 /* Clear floats after rows */
