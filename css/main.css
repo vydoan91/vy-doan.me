@@ -63,7 +63,7 @@ a:before, a:after {
  .icon {
      font-size: 25px;
  }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .side {
     width: 100%;
   }
@@ -134,7 +134,7 @@ a:before, a:after {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   div.left-side {
     width: 100%;
     height: 100%;
@@ -277,7 +277,7 @@ a:before, a:after {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column-text.middle-left-page {
     width: 100%;
     height: 100%;
@@ -331,7 +331,7 @@ a:before, a:after {
   padding: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column-text.middle-right-page, .column-text.side-right-page,input[type=submit] {
     width: 100%;
     height: 100%;
@@ -376,7 +376,7 @@ a:before, a:after {
   border: 1px solid #818181;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 50%;
   }
@@ -428,7 +428,7 @@ input[type=submit]:hover {
     background-image: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .hidden-content, #map2{
     display: block;
   }
