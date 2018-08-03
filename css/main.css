@@ -208,7 +208,7 @@ a:before, a:after {
 .column-text.side-with-btn{
   width: 7%;
   height: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 .row-text{
@@ -322,10 +322,6 @@ a:before, a:after {
   left: 25px;
 }
 
-#left-exit-button {
-  text-align: left;
-}
-
 .column-text.middle-right-page, .column-text.side-right-page {
   width: 45%;
   padding: 30px;
@@ -433,6 +429,10 @@ input[type=submit]:hover {
     display: block;
   }
   #rightBtn, #leftBtn {
+    display: none;
+  }
+
+  .content-left, .content-right {
     display: none;
   }
 }
