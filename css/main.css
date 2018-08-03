@@ -173,7 +173,7 @@ a:before, a:after {
 }
 
 #vy, .typed-cursor{
-    font-size: 50px;
+    font-size: 4vw;
 }
 @keyframes typedjsBlink{
   50% { opacity: 0.0; }
@@ -284,6 +284,10 @@ a:before, a:after {
   }
   .content-left {
     padding-top: 15px;
+  }
+
+  #vy, .typed-cursor{
+    font-size: 35px;
   }
 }
 /*---------------------------------------------------
