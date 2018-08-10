@@ -79,6 +79,17 @@ a:before, a:after {
 
 .content-right, .hidden-content-right, input[type=text], select, textarea {
     background-color: #FBFAF8}
+
+ul li {
+  padding: 10px 0px;
+  clear: both;
+  list-style-type: none;
+}
+
+.bold-text {
+  font-weight: bold;
+  padding-right: 10px;
+}
 /*---------------------------------------------------
   BUTTON ON MAIN PAGE
 ---------------------------------------------------*/
@@ -142,12 +153,12 @@ a:before, a:after {
     margin-left: auto;
     margin-right: auto;
     float: none;
-    padding: 30px;
+    padding: 60px;
   }
 
   div.right-side {
     margin-left: 0;
-    padding: 30px;
+    padding: 60px;
   }
 }
 
@@ -201,6 +212,7 @@ a:before, a:after {
 .column-text.side-left-page {
   width: 13%;
   padding-left: 20px;
+  text-align: center;
 }
 
 
@@ -219,8 +231,8 @@ a:before, a:after {
 /* Middle column */
 .column-text.middle-left-page {
   width: 80%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 10%;
 }
 
@@ -241,10 +253,6 @@ a:before, a:after {
   padding-top: 40px;
   padding-bottom: 40px;
   clear: both;
-}
-
-.content-left ul, .hidden-content ul{
-  list-style-type: none;
 }
 
 .float-left {
@@ -289,6 +297,10 @@ a:before, a:after {
   #vy, .typed-cursor{
     font-size: 35px;
   }
+
+  .column-text.side-left-page {
+    padding-left: 60px;
+  }
 }
 /*---------------------------------------------------
   RIGHT PAGE
@@ -305,6 +317,7 @@ a:before, a:after {
     background-image: linear-gradient(left, #D3DCE8 7%, #F9FAFA 7%, #F9FAFA 100%);
     height: 100%;
 }
+
 .content-right {
   height: 100%;
   width: 0;
@@ -324,7 +337,7 @@ a:before, a:after {
 
 .column-text.middle-right-page, .column-text.side-right-page {
   width: 45%;
-  padding: 30px;
+  padding: 60px;
 }
 
 @media screen and (max-width: 800px) {
@@ -369,7 +382,6 @@ a:before, a:after {
 
 .content img{
   width: 100%;
-  border: 1px solid #818181;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -447,7 +459,7 @@ input[type=submit]:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 12px;
   margin-bottom: 10px;
 }
