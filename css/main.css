@@ -44,6 +44,7 @@ a:before, a:after {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+/*break line*/
  hr {
   display: block;
   border-top: 4px solid;
@@ -52,9 +53,18 @@ a:before, a:after {
    width: 35px;
 }
 
- .fa{
-   font-size: 40px;
- }
+.fa {
+  text-align: center;
+  font-size: 20px;
+}
+
+ /*font awesome*/
+.border-square {
+  border: 3px solid;
+  padding: 0.5em;
+  height: 45px;
+  width: 45px;
+}
 
  .fa-window-close {
      padding: 10px;
@@ -93,22 +103,22 @@ ul li {
 /*---------------------------------------------------
   BUTTON ON MAIN PAGE
 ---------------------------------------------------*/
+#rightBtn, #leftBtn {
+  position: absolute;
+  top: 0;
+  margin-top: 35px;
+}
+
 /*Icon email button*/
 #rightBtn{
   right: 25px;
   margin-left: 50px;
-  position: absolute;
-  top: 0;
-  padding-top: 35px;
 }
 
 /*Icon info. button*/
 #leftBtn {
   left: 25px;
   margin-right: 50px;
-  position: absolute;
-  top: 0;
-  padding-top: 35px;
 }
 
 /*---------------------------------------------------
@@ -132,8 +142,8 @@ ul li {
   background-color: #FFFFFF;
 }
 
-.left-side a {
-  padding: 6px 8px 6px 16px;
+.social-icon {
+  padding: 6px 16px;
   text-decoration: none;
 }
 
